@@ -1,0 +1,93 @@
+main {
+    background-image: url(images/background-cuisine.jpg);
+    background-position: right top;
+    background-size: cover;
+    padding: 30px 0 30px;
+}
+
+table {
+    color: black;
+    font-weight: 600;
+    border-collapse: collapse;
+    border: solid 2px #193328;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+}
+
+th, td {
+    border: solid 1px #193328;
+    text-align: center;
+    font-size: 22px;
+}
+
+th {
+    height: 50px;
+}
+
+td {
+    height: 80px;
+}
+
+h2 {
+    border-top: solid 1px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+}
+p {
+    color: #fff;
+}
+
+.bouton-catalogue {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1300px;
+    margin: auto;
+}
+
+.bouton-catalogue a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #193328;
+}
+
+.a-propos {
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px 20px 10px;
+    border-radius: 5px;
+    background-color: #193328;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+    .bouton-catalogue {
+        justify-content: center;
+    }
+    table {
+        display: none;
+    }
+    .a-propos {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    nav a {
+        font-size: 14px;
+    }
+    p {
+        text-align: center;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}

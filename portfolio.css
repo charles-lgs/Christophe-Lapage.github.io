@@ -1,0 +1,154 @@
+.photo-cuisine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px;
+    gap: 15px;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.section-photo-cuisine img {
+    width: 363px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+h2 {
+    border-top: solid 1px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+}
+
+.photo-decoration {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    gap: 15px;
+    max-width: 1500px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.section-photo-decoration img {
+    width: 489px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.text-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.lien-photo {
+    position: relative;
+}
+
+.lien-photo:hover .text-hover {
+    display: flex;
+}
+
+.border-cuisine {
+    border-left: solid 5px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+    border-radius: 5px;
+    max-width: 1550px;
+    margin: auto;
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+
+.border-decoration {
+    border-right: solid 5px #7AA49A;
+    border-top: solid 1px #7AA49A;
+    border-radius: 5px;
+    max-width: 1550px;
+    margin: auto;
+    padding-top: 30px;
+    padding-right: 50px;
+}
+
+@media screen and (max-width: 1620px) {
+    .photo-cuisine {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .photo-decoration {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .border-cuisine {
+        border: none;
+        padding: 0;
+    }
+    .border-decoration {
+        border: none;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .section-photo-cuisine img {
+        width: 489px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-photo-cuisine img, .section-photo-decoration img {
+        width: 758px;
+        height: 400px;
+    }
+    .photo-cuisine, .photo-decoration {
+        overflow-x: scroll;
+        flex-direction: column;
+        height: 430px;
+        gap: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .section-photo-cuisine img, .section-photo-decoration img {
+        width: 415px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .section-photo-cuisine img, .section-photo-decoration img {
+        width: 365px;
+        height: 300px;
+    }
+    h2 {
+        font-size: 1.5em;
+        margin: 50px 0;
+    }
+    .photo-decoration {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .section-photo-cuisine img, .section-photo-decoration img {
+        width: 310px;
+        height: 245px;
+    }
+    .photo-cuisine, .photo-decoration {
+        height: 300px;
+    }
+}

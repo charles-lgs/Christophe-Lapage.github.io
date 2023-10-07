@@ -1,0 +1,195 @@
+main {
+    background-image: url(images/background-cuisine.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+.bouton-color {
+    color: black;
+}
+
+.section-flex-presentation {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: auto;
+}
+
+#contact {
+    padding-bottom: 30px;
+}
+
+#contact h2 {
+    border-top: solid 1px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+    color: white;
+}
+
+.section-flex-presentation h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    color: #193328;
+}
+
+.section-flex-presentation a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.flex-bouton {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-presentation {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 30px;
+    border-right: solid 5px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+    border-radius: 5px;
+}
+
+.flex-presentation ul {
+    padding-left: 30px;
+    color: black;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: auto;
+    border-right: solid 5px #7AA49A;
+    border-bottom: solid 1px #7AA49A;
+    border-radius: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.formulaire {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr;
+    gap: 15px;
+    justify-content: center;
+}
+
+.formulaire-objet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+label {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+}
+
+.un, .deux {
+    grid-column: 1/3;
+}
+
+.deux {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+input[type='submit'] {
+    background-color: #193328;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+    .flex-presentation, .flex-bouton, form {
+        padding: 0;
+        margin: 20px;
+    }
+    .deux {
+        align-items: center;
+    }
+    form {
+        border: none;
+    }
+    .flex-presentation {
+        border: none;
+    }
+    h2 {
+        border-top: solid 1px #7AA49A;
+        border-bottom: solid 1px #7AA49A;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex-bouton {
+        justify-content: center;
+        border-top: solid 1px #7AA49A;
+    }
+    .bouton-color {
+        color: #7AA49A;
+    }
+    .flex-presentation p, ul {
+        font-size: 20px;
+    }
+    .flex-presentation p {
+        text-align: center;
+    }
+    .flex-presentation {
+        justify-content: center;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .flex-presentation p, ul {
+        font-size: 18px;
+    }
+    .bouton-color {
+        color: #193328;
+    }
+    main {
+        background-position: right;
+    }
+    label {
+        color: #fff;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .formulaire { 
+        display: flex;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+}
